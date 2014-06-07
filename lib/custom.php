@@ -4,6 +4,7 @@
  */
 
 add_theme_support( 'post-formats', array( 'image', 'link', 'status', 'gallery' ) );
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
 
 register_post_type('angebot', array(
   'label' => 'angebot',
