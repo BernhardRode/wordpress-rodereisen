@@ -8,7 +8,13 @@
 <?php endif; ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', get_post_format()); ?>
+  <div class="row margin-top-20">
+    <div class="col-lg-12">
+      <div class="box">
+        <?php get_template_part('templates/content', get_post_format()); ?>
+      </div>
+    </div>
+  </div>
 <?php endwhile; ?>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>

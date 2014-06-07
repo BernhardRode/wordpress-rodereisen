@@ -7,13 +7,15 @@ Template Name: Home Template
 
 <div class="row">
   <div class="col col-lg-12">
-    <?php get_template_part('templates/content', 'page'); ?>
+    <div class="box">
+      <?php get_template_part('templates/content', 'page'); ?>
+    </div>
   </div>
 </div>
 
 <div class="hidden-xs">
   <?php get_template_part('templates/row-booking'); ?>
-  <?php get_template_part('templates/row-about'); ?>
+  <?php //get_template_part('templates/row-about'); ?>
 </div>
 
 <?php get_template_part('templates/row-personal-offers'); ?>
