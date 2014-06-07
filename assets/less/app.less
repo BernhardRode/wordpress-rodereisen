@@ -1,0 +1,459 @@
+/*!
+ * Roots 6.5.2
+ */
+
+@import "colors.less";
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/font-awesome/less/font-awesome.less";
+@import "variables.less";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+   //font-family: 'Roboto Condensed', sans-serif;
+   //font-weight: 300;
+   //letter-spacing: 0.1em;
+   color:@rr-blue;
+   line-height: 1.5em;
+   text-transform: lowercase;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+   font-weight: 300;
+}
+
+textarea {
+   resize: none;
+}
+
+.margin-top-20 {
+   margin-top:20px;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner { }
+
+.navbar-default {
+   background-color: @rr-white;
+   // -webkit-transition:all 3s linear;
+   // -moz-transition:all 3s linear;
+   // transition:all .6s linear;
+   font-weight:bold;
+   border:0;
+
+   // &:hover {
+   //    background-color: @rr-blue;
+   // }
+
+   .navbar-brand {
+      background: url(../img/rr.png) center left no-repeat @rr-white;
+      background-size: 100%;
+      color: transparent !important;
+      border-right:10px solid @rr-white;
+      border-left:10px solid @rr-white;
+
+      width:200px;
+   }
+
+}
+
+.page-header {
+   border:none;
+   margin:0;
+   padding:0;
+   h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+   }
+}
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content {
+}
+
+
+h1.entry-title {
+   text-transform: lowercase;
+
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 2.5em;
+   letter-spacing: 1px;
+}
+
+.gradient {
+   background: -webkit-gradient(linear,left top,left bottom,from(@rr-blue-light),to(@kuler-blue));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.gradient-light {
+   background: -webkit-gradient(linear,left top,left bottom,from(@rr-blue-light),to(@rr-white));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
+// first: #ff0052
+// second:
+.gradient-red {
+   background: -webkit-gradient(linear,left top,left bottom,from(#ff0052),to(#8e2b88));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+   line-height: 1.2em;
+}
+
+h2.entry-title {
+   text-transform: lowercase;
+
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 1.5em;
+   letter-spacing: 1px;
+}
+
+.mitarbeiter-list-item {
+   float:left;
+   max-width:80px;
+   margin:10px;
+   h1 {
+      display:none;
+   }
+}
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+.ibe {
+   position:fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin: @navbar-height+30 0 120px 0;
+   &:before {
+      content: " ";
+      position:fixed;
+      top:@navbar-height+30;
+      left:0;
+      right:0;
+      height:10px;
+      background: @rr-blue; /* Old browsers */
+      background: -webkit-linear-gradient(top, @rr-black 0%, @rr-white-alpha-0 40%);
+      background: -moz-linear-gradient(top, @rr-black 0%,  @rr-white-alpha-0 40%);
+      background: -ms-linear-gradient(top, @rr-black 0%, @rr-white-alpha-0 40%);
+      background: -o-linear-gradient(top, @rr-black 0%, @rr-white-alpha-0 40%);
+      background: linear-gradient(to bottom, @rr-black 0%, @rr-white-alpha-0 40%);
+   }
+
+   iframe {
+      height:100% !important;
+      width:100% !important;
+   }
+}
+
+.map {
+   position:fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   z-index:0;
+}
+
+.map-overlay {
+   z-index:200 !important;
+}
+
+#spinner {
+   text-align: center;
+   margin-top:200px;
+}
+
+/* ==========================================================================
+   Mitarbeiter
+   ========================================================================== */
+
+.mitarbeiter-container {
+   margin-bottom:10px;
+   .box {
+      overflow:hidden;
+      height:265px;
+      padding:10px 0;
+   }
+}
+
+/* ==========================================================================
+   Angebote
+   ========================================================================== */
+.angebot-container {
+   margin-bottom:10px;
+
+   .box {
+      overflow:hidden;
+      height:265px;
+      padding:10px 0;
+   }
+
+
+   &:hover {
+      & > img {
+         -webkit-animation-name: pulse;
+         -moz-animation-name: pulse;
+         -ms-animation-name: pulse;
+         -o-animation-name: pulse;
+         animation-name: pulse;
+
+         -webkit-animation-iteration-count: infinite;
+         -moz-animation-iteration-count: infinite;
+         -ms-animation-iteration-count: infinite;
+         -o-animation-iteration-count: infinite;
+         animation-iteration-count: infinite;
+      }
+   }
+
+   .titel {
+      height:70px;
+      overflow:hidden;
+   }
+   .preis {
+      line-height: 30px;
+      font-weight:bold;
+      font-size:30px;
+   }
+
+   .content-wrapper {
+      position:absolute;
+      top:0;
+      left:0;
+      z-index: 400;
+      width:100%;
+   }
+}
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+   position: fixed;
+   left:0;
+   right:0;
+   bottom:0;
+   width: 100%;
+   background: @rr-blue; /* Old browsers */
+   background: -webkit-linear-gradient(top, @rr-blue-alpha-0 0%, @rr-blue-alpha-80 40%);
+   background: -moz-linear-gradient(top, @rr-blue-alpha-0 0%,  @rr-blue-alpha-80 40%);
+   background: -ms-linear-gradient(top, @rr-blue-alpha-0 0%, @rr-blue-alpha-80 40%);
+   background: -o-linear-gradient(top, @rr-blue-alpha-0 0%, @rr-blue-alpha-80 40%);
+   background: linear-gradient(to bottom, @rr-blue-alpha-0 0%, @rr-blue-alpha-80 40%);
+   color:@rr-white;
+
+   a {
+      color:@rr-red;
+      font-weight: bold;
+   }
+}
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+/* ==========================================================================
+   headroom.js fixes
+   ========================================================================== */
+// .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out !important; height:100px;}
+// .headroom--unpinned {top: -100px !important;}
+// .headroom--pinned {top: 0 !important;}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: @screen-sm-min) { }
+
+@media (min-width: @screen-md-min) {
+
+   #menu-primary-navigation {
+      margin-left:30px;
+
+      .navbar-nav {
+         li {
+            a {
+               color:red;
+            }
+         }
+      }
+   }
+
+   .navbar-default {
+      background-color: transparent;
+     .navbar-nav {
+         margin-top:8px;
+         float:right;
+
+         li {
+            margin-left:20px;
+            border-radius: 3px;
+
+            a {
+               text-transform: lowercase;
+               color:@rr-blue-alpha-80;
+               border:1px solid @rr-blue-alpha-80;
+               background-color: transparent;
+               border-radius:3px;
+               transition: 0.7s background-color linear;
+
+               &:hover {
+                  color:@rr-white;
+                  border:1px solid @rr-white;
+                  background-color: @rr-blue-alpha-70;
+               }
+            }
+         }
+      }
+   }
+   .navbar-brand {
+      border-radius: 0 0 10px 10px;
+      margin-left:0px !important;
+   }
+
+   body {
+      padding-bottom: 125px;
+
+      background: no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      &.home {
+         background-image: url('/app/themes/rr-press/assets/img/stock/golf.peter.001.jpg');
+      }
+      &.post-type-archive-angebot {
+         background-image: url('/app/themes/rr-press/assets/img/stock/aida.jpg');
+      }
+      &.post-type-archive-mitarbeiter {
+         background-image: url('/app/themes/rr-press/assets/img/stock/palme.jpg');
+      }
+      &.wo {
+         //background-image: url('/app/themes/rr-press/assets/img/stock/strand.001.jpg');
+      }
+      &.kontakt {
+         background-image: url('/app/themes/rr-press/assets/img/stock/tau.jpg');
+      }
+      &.impressum {
+         background-image: url('/app/themes/rr-press/assets/img/stock/ruine.yucatan.jpg');
+      }
+      &.agb {
+         background-image: url('/app/themes/rr-press/assets/img/stock/ruine.yucatan.jpg');
+      }
+      &.single-mitarbeiter {
+         background-image: url('/app/themes/rr-press/assets/img/gruppenbild.jpg');
+      }
+
+      &.page-template-template-ibe-php {
+         background-image: url('/app/themes/rr-press/assets/img/stock/ruine.yucatan.jpg');
+         .navbar {
+            background-color: @rr-white;
+         }
+      }
+
+   }
+
+   .content {
+      min-height:500px;
+   }
+
+   .box {
+      background: @rr-white-alpha-90; /* Old browsers */
+      background: -webkit-linear-gradient(top, @rr-white-alpha-60 0%, @rr-white-alpha-90 40%);
+      background: -moz-linear-gradient(top, @rr-white-alpha-60 0%,  @rr-white-alpha-90 40%);
+      background: -ms-linear-gradient(top, @rr-white-alpha-60 0%, @rr-white-alpha-90 40%);
+      background: -o-linear-gradient(top, @rr-white-alpha-60 0%, @rr-white-alpha-90 40%);
+      background: linear-gradient(to bottom, @rr-white-alpha-60 0%, @rr-white-alpha-90 40%);
+      padding:20px;
+      border-radius: 10px;
+      border:1px solid #ddd;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+
+      -webkit-transition:all 3s linear;
+      -moz-transition:all 3s linear;
+      transition:all .3s linear;
+
+      &:hover {
+         background-color: @rr-white;
+      }
+   }
+
+   .mitarbeiter-list {
+      text-align: center;
+   }
+
+   .mitarbeiter-list-item {
+      float:left;
+      max-width:130px;
+      margin:10px;
+      overflow:hidden;
+      h1 {
+         font-size:18px;
+         text-align: center;
+         display:block;
+      }
+   }
+}
+
+@media (min-width: @screen-lg-min) { }

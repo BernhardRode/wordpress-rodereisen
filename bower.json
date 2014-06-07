@@ -1,0 +1,23 @@
+{
+  "name": "rr-press",
+  "version": "0.0.0",
+  "authors": [
+    "Bernhard Rode <mail@bernhardrode.de>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1",
+    "headroom.js": "~0.5.0",
+    "modernizr": "~2.8.2",
+    "font-awesome": "~4.1.0"
+  }
+}
