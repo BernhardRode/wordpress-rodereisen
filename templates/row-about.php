@@ -1,6 +1,8 @@
 <div class="row">
   <div class="col col-lg-12">
-    <h1 class="gradient-red">Das Reisebüro Rode</h1>
+    <div class="page-header">
+      <h1 class="gradient-red">Das Reisebüro Rode</h1>
+    </div>
   </div>
 </div>
 <div class="row">
