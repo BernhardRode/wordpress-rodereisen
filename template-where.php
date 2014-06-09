@@ -8,13 +8,13 @@ Template Name: Where Template
   <div id="map_canvas" style="width: 100%; height: 100%"></div>
 </div>
 
-<section class="map-overlay">
+<section class="map-overlay hidden-xs">
   <div class="row">
     <div class="col col-xs-12">
       <?php get_template_part('templates/page', 'header'); ?>
     </div>
   </div>
-  <?php //get_template_part('templates/page', 'header'); ?>
+
   <div class="row">
     <div class="col col-xs-4">
       <div class="box">
