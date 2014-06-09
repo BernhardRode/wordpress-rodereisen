@@ -46,10 +46,16 @@
         </ul>
       </div>
     </div>
+    <?php function auto_copyright($year = 'auto'){ ?>
+       <?php if(intval($year) == 'auto'){ $year = date('Y'); } ?>
+       <?php if(intval($year) == date('Y')){ echo intval($year); } ?>
+       <?php if(intval($year) < date('Y')){ echo intval($year) . ' - ' . date('Y'); } ?>
+       <?php if(intval($year) > date('Y')){ echo date('Y'); } ?>
+    <?php } ?>
     <div class="row">
       <div class="col-xs-12 text-right">
         <small class="muted">
-          copyright &copy; 2013 reisebüro<strong>rode</strong> gmbh. alle rechte vorbehalten.
+          copyright &copy; <?php auto_copyright('1983');  // 2010 - 2011 ?> reisebüro<strong>rode</strong> gmbh. alle rechte vorbehalten.
           &nbsp;
           <a href="/agb">agb</a>
           &nbsp;|&nbsp;
