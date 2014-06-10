@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
@@ -29,7 +31,7 @@
     } 
   ?>
   
-  <title><?php echo $title; ?></title>
+  <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; - <?php } ?> <?php wp_title(); ?></title>
   <meta name="description" content="<?php echo $description; ?>" />
   
   <!-- BEGIN OF META TAGS -->
@@ -45,24 +47,24 @@
   <meta property="business:contact_data:website" content="http://www.rodereisen.de"/>
   <!-- Google+ Meta Tags -->
   <link rel="publisher" href="https://plus.google.com/+rodereisende"/>
-  <meta itemprop="name" content="<?php echo $title; ?>"/>
+  <meta itemprop="name" content="<?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; - <?php } ?> <?php wp_title(); ?>"/>
   <meta itemprop="description" content="<?php echo $description; ?>"/>
   <meta itemprop="image" content="<?php echo $image; ?>"/>
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@reisebuerorode" />
-  <meta name="twitter:title" content="<?php echo $title; ?>" />
+  <meta name="twitter:title" content="<?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; - <?php } ?> <?php wp_title(); ?>" />
   <meta name="twitter:description" content="<?php echo $description; ?>" />
   <meta name="twitter:creator" content="@reisebuerorode" />
   <meta name="twitter:image:src" content="<?php echo $image; ?>" />
   <meta name="twitter:domain" content="rodereisen.de" />
   <!-- Facebook Meta Tags -->
   <meta property="og:type" content="site"/>
-  <meta property="og:title" content="<?php echo $title; ?>"/>
+  <meta property="og:title" content="<?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; - <?php } ?> <?php wp_title(); ?>"/>
   <meta property="og:description" content="<?php echo $description; ?>"/>
   <meta property="og:image" content="<?php echo $image; ?>"/>
   <meta property="og:url" content="<?php echo $url; ?>"/>
-  <meta property="og:site_name" content="<?php echo $title; ?>"/>
+  <meta property="og:site_name" content="<?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; - <?php } ?> <?php wp_title(); ?>"/>
   <meta property="og:see_also" content="http://www.rodereisen.de"/>
   <!-- END OF META TAGS -->
 </head>
