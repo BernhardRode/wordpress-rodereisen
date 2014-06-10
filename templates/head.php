@@ -11,21 +11,21 @@
     $url = "http://www.rodereisen.de";
   ?>
   <?php 
-  if (is_single() || is_page() ) {
-    $title = utf8_decode(single_post_title());
-    if ( has_post_thumbnail() ) {
-      $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
-      $image = $large_image_url['0'];
+    if (is_single() || is_page() ) {
+      $title = utf8_decode(single_post_title());
+      if ( has_post_thumbnail() ) {
+        $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+        $image = $large_image_url['0'];
+      }
+    
+      $url = get_permalink() . "?utm_source=social_media";
+      global $post;
+      $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
+      $description = strip_tags(get_the_excerpt($post->ID));
     }
-  
-    $url = get_permalink() . "?utm_source=social_media";
-    global $post;
-    $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
-    $description = strip_tags(get_the_excerpt($post->ID));
-  }
   ?>
   
-  <title><?php wp_title('|', true, 'right'); ?></title>
+  <title><?php echo $title; ?></title>
   <meta name="description" content="<?php echo $description; ?>" />
   
   <!-- BEGIN OF META TAGS -->
@@ -41,27 +41,24 @@
   <meta property="business:contact_data:website" content="http://www.rodereisen.de"/>
   <!-- Google+ Meta Tags -->
   <link rel="publisher" href="https://plus.google.com/+rodereisende"/>
-  <meta itemprop="name" content="<?php wp_title('|', true, 'right'); ?>"/>
+  <meta itemprop="name" content="<?php echo $title; ?>"/>
   <meta itemprop="description" content="<?php echo $description; ?>"/>
   <meta itemprop="image" content="<?php echo $image; ?>"/>
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@reisebuerorode">
-  <meta name="twitter:title" content="<?php wp_title('|', true, 'right'); ?>">
+  <meta name="twitter:title" content="<?php echo $title; ?>">
   <meta name="twitter:description" content="<?php echo $description; ?>">
   <meta name="twitter:creator" content="@reisebuerorode">
   <meta name="twitter:image:src" content="<?php echo $image; ?>">
   <meta name="twitter:domain" content="rodereisen.de">
   <!-- Facebook Meta Tags -->
-  <meta property="og:type" content="profile"/> 
-  <meta property="profile:first_name" content="Reisebüro"/> 
-  <meta property="profile:last_name" content="Rode"/>
-  <meta property="profile:username" content=""/>
-  <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?>"/>
+  <meta property="og:type" content="site"/>
+  <meta property="og:title" content="<?php echo $title; ?>"/>
   <meta property="og:description" content="<?php echo $description; ?>"/>
   <meta property="og:image" content="<?php echo $image; ?>"/>
   <meta property="og:url" content="<?php echo $url; ?>"/>
-  <meta property="og:site_name" content="<?php wp_title('|', true, 'right'); ?>"/>
+  <meta property="og:site_name" content="<?php echo $title; ?>"/>
   <meta property="og:see_also" content="http://www.rodereisen.de"/>
   <meta property="fb:admins" content=""/>
   <!-- END OF META TAGS -->
