@@ -16,8 +16,8 @@
     $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
 
     if ( is_single() || is_page() ) {
-       $title = get_the_title('|', true, 'right');
-      $title = utf8_decode(single_post_title());
+      $title = get_the_title('|', true, 'right');
+      
       if ( has_post_thumbnail() ) {
         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
         $image = "http://www.rodereisen.de" . $large_image_url['0'];
