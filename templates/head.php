@@ -10,12 +10,13 @@
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>" />
 
   <?php 
-    $title = get_the_title('|', true, 'right');
+    $title = "Reisebüro Rode GmbH | wir kümmern uns. um sie.";
     $image = get_template_directory_uri() . "/assets/img/rodereisen.png";
     $url = "http://www.rodereisen.de" . "?utm_source=social_media";
     $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
 
     if ( is_single() || is_page() ) {
+       $title = get_the_title('|', true, 'right');
       $title = utf8_decode(single_post_title());
       if ( has_post_thumbnail() ) {
         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
