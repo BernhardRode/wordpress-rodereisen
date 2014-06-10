@@ -8,21 +8,21 @@
   <?php 
     $title = get_the_title('|', true, 'right');
     $image = get_template_directory_uri() . "/assets/img/rodereisen.png";
+    $url = "http://www.rodereisen.de";
   ?>
-  <?php if (is_single() || is_page() ) {
+  <?php 
+  if (is_single() || is_page() ) {
     $title = utf8_decode(single_post_title());
-    if ( has_post_thumbnail()) {
+    if ( has_post_thumbnail() ) {
       $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
       $image = $large_image_url['0'];
     }
   
-  $url = get_permalink() . "?utm_source=social_media";
-  global $post;
-  $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
-  $url = get_permalink( $post->ID );
-  if (is_single()) {
+    $url = get_permalink() . "?utm_source=social_media";
+    global $post;
+    $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
     $description = strip_tags(get_the_excerpt($post->ID));
-  } 
+  }
   ?>
   
   <title><?php wp_title('|', true, 'right'); ?></title>
