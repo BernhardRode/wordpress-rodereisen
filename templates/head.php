@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
@@ -26,8 +24,7 @@
       }
     
       $url = get_permalink() . "?utm_source=social_media";
-      global $post;
-      $description = strip_tags(get_the_excerpt($post->ID));
+      $description = strip_tags(get_the_excerpt());
     } 
   ?>
   
