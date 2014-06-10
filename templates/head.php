@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <?php 
     $title = get_the_title('|', true, 'right');
     $image = get_template_directory_uri() . "/assets/img/rodereisen.png";
     $url = "http://www.rodereisen.de" . "?utm_source=social_media";
     $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
-  ?>
-  <?php 
+
     if ( is_single() || is_page() ) {
       $title = utf8_decode(single_post_title());
       if ( has_post_thumbnail() ) {
@@ -45,13 +44,13 @@
   <meta itemprop="description" content="<?php echo $description; ?>"/>
   <meta itemprop="image" content="<?php echo $image; ?>"/>
   <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@reisebuerorode">
-  <meta name="twitter:title" content="<?php echo $title; ?>">
-  <meta name="twitter:description" content="<?php echo $description; ?>">
-  <meta name="twitter:creator" content="@reisebuerorode">
-  <meta name="twitter:image:src" content="<?php echo $image; ?>">
-  <meta name="twitter:domain" content="rodereisen.de">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@reisebuerorode" />
+  <meta name="twitter:title" content="<?php echo $title; ?>" />
+  <meta name="twitter:description" content="<?php echo $description; ?>" />
+  <meta name="twitter:creator" content="@reisebuerorode" />
+  <meta name="twitter:image:src" content="<?php echo $image; ?>" />
+  <meta name="twitter:domain" content="rodereisen.de" />
   <!-- Facebook Meta Tags -->
   <meta property="og:type" content="site"/>
   <meta property="og:title" content="<?php echo $title; ?>"/>
