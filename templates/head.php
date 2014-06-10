@@ -20,7 +20,7 @@
       $title = utf8_decode(single_post_title());
       if ( has_post_thumbnail() ) {
         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
-        $image = $large_image_url['0'];
+        $image = "http://www.rodereisen.de" . $large_image_url['0'];
       }
     
       $url = get_permalink() . "?utm_source=social_media";
