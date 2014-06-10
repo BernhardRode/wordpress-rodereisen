@@ -24,7 +24,7 @@
       }
     
       $url = get_permalink() . "?utm_source=social_media";
-      $description = strip_tags(get_the_excerpt());
+      #$description = strip_tags(get_the_excerpt());
     } 
   ?>
   
