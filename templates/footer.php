@@ -4,25 +4,29 @@
       <div class="col-xs-3">
         <h4>reisebüro<strong>rode</strong> gmbh</h4>
         <address>
-          <abbr title="E-Mail">e:</abbr> <a href="mailto:info@rodereisen.de">info@rodereisen.de</a><br>
+          <abbr title="E-Mail">e:</abbr> <a href="mailto:info@rodereisen.de"><span property="v:mail">info@rodereisen.de<span property="v:tel"></a><br>
           <abbr title="Fax">f:</abbr> +49 (0)7062 949994
         </address>
         <span>ust.id. DE145781171</span>
       </div>
       <div class="col-xs-3">
-        <address>
-          <h4>standort<strong>beilstein</strong></h4>
-          oberstenfelderstr. 16<br>
-          d-71717 beilstein<br>
-          <abbr title="Phone">p:</abbr> <a href="tel:+49706294990">+49 (0)7062 94990</a>
+        <address rel="v:address">
+          <div typeof="v:Address">
+            <h4>standort<strong>beilstein</strong></h4>
+            <span property="v:street-address">oberstenfelderstr. 16</span><br>
+            d-71717 beilstein<br>
+            <abbr title="Phone">p:</abbr> <a href="tel:+49706294990"><span property="v:tel">+49 (0)7062 94990</span></a>
+          </div>
         </address>
       </div>
       <div class="col-xs-3">
-        <address>
-          <h4>standort<strong>steinheim</strong></h4>
-          im klostermuseum<br>
-          d-71711 steinheim<br>
-          <abbr title="Phone">p:</abbr> <a href="tel:+49714481550">+49 (0)7144 81550</a>
+        <address rel="v:address">
+          <div typeof="v:Address">
+            <h4>standort<strong>steinheim</strong></h4>
+            <span property="v:street-address">im klostermuseum</span><br>
+            <span property="v:locality">d-71711 steinheim</span><br>
+            <abbr title="Phone">p:</abbr> <a href="tel:+49714481550"><span property="v:tel">+49 (0)7144 81550</span></a>
+          </div>
         </address>
       </div>
       <div class="col-xs-3">

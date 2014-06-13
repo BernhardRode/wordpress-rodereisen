@@ -16,7 +16,7 @@ Template Name: Where Template
   </div>
 
   <div class="row">
-    <div class="col col-xs-4">
+    <div class="col col-xs-5">
       <div class="box">
         <div class="row">
           <div class="col col-xs-5">
