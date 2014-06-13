@@ -13,6 +13,8 @@ Template Name: Home Template
   </div>
 </div>
 
+<?php get_template_part('templates/row-open'); ?>
+
 <div class="hidden-xs">
   <?php get_template_part('templates/row-booking'); ?>
   <?php //get_template_part('templates/row-about'); ?>
