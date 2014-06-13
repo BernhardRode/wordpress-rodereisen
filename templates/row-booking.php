@@ -1,7 +1,7 @@
 <?php
   if (  is_user_logged_in() ) {
 ?>
-
+  <div class="hidden-xs">
     <div class="row">
       <div class="col col-lg-12">
         <div class="page-header">
@@ -14,7 +14,7 @@
         <a href="/online-buchen">
           <div class="box text-center">
             <i class="fa fa-suitcase fa-5x gradient"></i>
-            <h1 class="gradient">Pauschalreisen</h1>
+            <h1 class="gradient">Pauschal</h1>
           </div>
         </a>
       </div>
@@ -35,7 +35,7 @@
         </a>
       </div>
     </div>
-
+  </div>
 <?php
  }
 ?>

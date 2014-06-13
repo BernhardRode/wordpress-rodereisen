@@ -1,6 +1,6 @@
 <div class="">
   <div class="row">
-    <div class="col text-center col-md-4">
+    <div class="col text-center col-xs-4">
         <?php
 
           $next_post = get_next_post();
@@ -11,21 +11,21 @@
         ?>
           <div class="">
             <a class="btn btn-lg  btn-block btn-primary" href="<?php echo get_permalink( $next_post->ID ); ?>">
-              <i class="fa fa-toggle-left"></i>&nbsp;<?php echo $next_post->post_title; ?>
+              <i class="fa fa-toggle-left"></i><span class="hidden-xs">&nbsp;<?php echo $next_post->post_title; ?></span>
             </a>
           </div>
         <?php
           endif;
         ?>
     </div>
-    <div class="col col-md-4">
+    <div class="col col-xs-4">
       <div class="">
         <div class="text-center">
-          <a class="btn btn-lg btn-block btn-primary" href="/angebote">Alle Angebote</a>
+          <a class="btn btn-lg btn-block btn-primary" href="/angebote">Übersicht</a>
         </div>
       </div>
     </div>
-    <div class="col col-md-4">
+    <div class="col col-xs-4">
         <?php
           $previous_post = get_previous_post();
           if (!empty( $previous_post )):
@@ -35,7 +35,7 @@
 
           <div class="">
             <a class="btn btn-lg btn-block btn-primary" href="<?php echo get_permalink( $previous_post->ID ); ?>">
-              <?php echo $previous_post->post_title; ?>&nbsp;<i class="fa fa-toggle-right"></i>
+              <span class="hidden-xs">&nbsp;<?php echo $previous_post->post_title; ?>&nbsp;</span><i class="fa fa-toggle-right"></i>
             </a>
           </div>
         <?php

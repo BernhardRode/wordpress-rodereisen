@@ -7,12 +7,12 @@
 </div>
 <div class="box">
   <div class="row">
-    <div class="col col-md-6 text-center">
+    <div class="col col-sm-6 text-center">
       <i class="fa fa-ticket fa-5x gradient"></i>
       <h1 class="gradient">Geben Sie in das Feld Ihren Beratungscode ein</h1>
     </div>
-    <div class="col col-md-6">
-      <form target="_blank" method="get" action="http://meinereiseangebote.de/GoToAdvisory.php" class="form-horizontal" role="form">
+    <div class="col col-sm-6">
+      <form target="_blank" method="get" action="http://meinereiseangebote.de/GoToAdvisory.php" class="" role="form">
         <input type="hidden" name="portal" value="Ad9agR6" />
         <input type="hidden" name="widgetid" value="MMPJABZVZTAKZTZEDEJR" />
         <div class="form-group">

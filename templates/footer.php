@@ -1,5 +1,5 @@
-<footer class="hidden-xs non-printable">
-  <div class="container">
+<footer class="non-printable">
+  <div class="container hidden-xs">
     <div class="row">
       <div class="col-xs-3">
         <h4>reisebüro<strong>rode</strong> gmbh</h4>
@@ -69,6 +69,19 @@
     </div>
   </div>
 </footer>
+<div class="container">
+  <div class="row visible-xs">
+    <div class="col-xs-12 text-center">
+      <small class="muted">
+        <a href="/agb">agb</a>
+        &nbsp;|&nbsp;
+        <a href="/impressum">impressum</a>
+        <br>
+        copyright &copy; <?php auto_copyright('1983');  // 2010 - 2011 ?> reisebüro<strong>rode</strong> gmbh. alle rechte vorbehalten.
+      </small>
+    </div>
+  </div>
+</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
