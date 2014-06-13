@@ -47,17 +47,29 @@
 <div class="margin-top-20">
   <div class="box">
     <?php while (have_posts()) : the_post(); ?>
+      <?php
+        $permalink = urlencode(get_the_permalink());
+        $title = urlencode(get_the_title());
+        $kontakt_url = "/kontakt/?url=" . $permalink . "&title=" . $title;
+      ?>
       <article <?php post_class(); ?>>
         <div class="row">
           <div class="col col-md-4">
             <div class="text-center">
               <?php the_post_thumbnail('thumbnail', array('class' => 'img-circle img-shadow')); ?>
+              <div class="hidden-xs margin-top-20">
+                <a class="btn btn-danger btn-lg btn-block" href="<?php echo $kontakt_url; ?>">Informationen anfordern</a>
+              </div>
             </div>
           </div>
           <div class="col col-md-8">
             <h1 class="entry-title gradient"><?php the_title(); ?></h1>
-
             <?php the_content(); ?>
+          </div>
+        </div>
+        <div class="row visible-xs">
+          <div class="col col-lg-12">
+            <a class="btn btn-danger btn-lg btn-block" href="<?php echo $kontakt_url; ?>">Informationen anfordern</a>
           </div>
         </div>
       </article>
