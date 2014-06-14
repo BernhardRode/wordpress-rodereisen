@@ -52,11 +52,12 @@
         $title = urlencode(get_the_title());
         $kontakt_url = "/kontakt/?url=" . $permalink . "&title=" . $title;
       ?>
-      <article <?php post_class(); ?>>
+      <article <?php post_class(); ?> itemscope itemtype="http://schema.org/Offer">
         <div class="row">
           <div class="col col-md-4">
             <div class="text-center">
               <?php the_post_thumbnail('thumbnail', array('class' => 'img-circle img-shadow')); ?>
+              <span itemprop="image" hidden><?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?></span>
               <div class="hidden-xs margin-top-20">
                 <a class="btn btn-danger btn-lg btn-block" href="<?php echo $kontakt_url; ?>">Informationen anfordern</a>
               </div>
@@ -64,8 +65,15 @@
             </div>
           </div>
           <div class="col col-md-8">
-            <h1 class="entry-title gradient"><?php the_title(); ?></h1>
-            <?php the_content(); ?>
+            <h1 class="entry-title gradient" itemprop="name"><?php the_title(); ?></h1>
+
+              <?php if( get_field('field_53808a959373e') ): ?>
+                <h2 class="gradient-red text-right" itemprop="price"><?php the_field('field_53808a959373e'); ?> Euro</h2>
+              <?php endif; ?>
+
+            <div itemprop="description">
+              <?php the_content(); ?>
+            </div>
           </div>
         </div>
         <div class="row visible-xs">

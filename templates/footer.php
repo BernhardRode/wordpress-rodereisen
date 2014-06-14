@@ -4,6 +4,7 @@
       <div class="col-xs-3">
         <h4>reisebüro<strong>rode</strong> gmbh</h4>
         <span itemprop="name" hidden>reisebüro rode gmbh</span>
+        <span itemprop="logo" hidden>http://www.rodereisen.de" . get_template_directory_uri() . "/assets/img/rodereisen.png</span>
         <address>
           <abbr title="E-Mail">e:</abbr> <a href="mailto:info@rodereisen.de" itemprop="email">info@rodereisen.de</a><br>
           <abbr title="Webseite">w:</abbr> <a href="http://www.rodereisen.de" itemprop="url">www.rodereisen.de</a><br>
