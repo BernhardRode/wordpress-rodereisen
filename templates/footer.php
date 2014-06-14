@@ -2,18 +2,20 @@
   <div class="container hidden-xs">
     <div class="row">
       <div class="col-xs-3">
-        <h4 itemprop="name">reisebüro<strong>rode</strong> gmbh</h4>
+        <h4>reisebüro<strong>rode</strong> gmbh</h4>
+        <span itemprop="name" hidden>reisebüro rode gmbh</span>
         <address>
-          <abbr title="E-Mail">e:</abbr> <a href="mailto:info@rodereisen.de" itemprop="url">info@rodereisen.de</a><br>
+          <abbr title="E-Mail">e:</abbr> <a href="mailto:info@rodereisen.de" itemprop="email">info@rodereisen.de</a><br>
           <abbr title="Webseite">w:</abbr> <a href="http://www.rodereisen.de" itemprop="url">www.rodereisen.de</a><br>
           <abbr title="Fax">f:</abbr> <span itemprop="faxNumber">+49 (0)7062 949994</span>
         </address>
-        <span itemprop="taxID">ust.id. DE145781171</span>
+        <span>ust.id. <span itemprop="taxID">DE145781171</span></span>
       </div>
       <div class="col-xs-3">
         <address itemscope itemtype="http://schema.org/LocalBusiness">
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <h4 itemprop="name">standort<strong>beilstein</strong></h4>
+            <h4>standort<strong>beilstein</strong></h4>
+            <span itemprop="name" hidden>reisebüro rode beilstein</span>
             <span itemprop="streetAddress">oberstenfelderstr. 16</span><br>
             d-<span itemprop="postalCode">71717</span> <span itemprop="addressLocality">beilstein</span><br>
             <abbr>p:</abbr> <a href="tel:+49706294990"><span itemprop="telephone">+49 (0)7062 94990</span></a>
@@ -23,7 +25,8 @@
       <div class="col-xs-3">
         <address itemscope itemtype="http://schema.org/LocalBusiness">
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <h4 itemprop="name">standort<strong>steinheim</strong></h4>
+            <h4>standort<strong>steinheim</strong></h4>
+            <span itemprop="name" hidden>reisebüro rode steinheim</span>
             <span itemprop="streetAddress">im klostermuseum</span><br>
             d-<span itemprop="postalCode">71711</span> <span itemprop="addressLocality">steinheim</span><br>
             <abbr title="Phone">p:</abbr> <a href="tel:+49714481550"><span itemprop="telephone">+49 (0)7144 81550</span></a>
