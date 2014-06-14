@@ -1,6 +1,6 @@
 {
   "name": "headroom.js",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": [
     "dist/headroom.js",
     "dist/jQuery.headroom.js",
@@ -28,13 +28,14 @@
     "scroll"
   ],
   "license": "MIT",
-  "_release": "0.5.0",
+  "_release": "0.6.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.5.0",
-    "commit": "012e2dfb5f3f3d975660192fdb520b2a49dfb50f"
+    "tag": "v0.6.0",
+    "commit": "cbd424e41f09f5526069b958a1ba2025747e60b2"
   },
   "_source": "git://github.com/WickyNilliams/headroom.js.git",
-  "_target": "~0.5.0",
-  "_originalSource": "headroom.js"
+  "_target": "~0.6.0",
+  "_originalSource": "headroom.js",
+  "_direct": true
 }

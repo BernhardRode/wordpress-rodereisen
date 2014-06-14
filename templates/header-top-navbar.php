@@ -1,4 +1,8 @@
-<header id="header" class="banner navbar navbar-default navbar-static-top" role="banner">
+<div id="bg">
+  <img src="/app/themes/rr-press/assets/img/stock/strand.yucatan.mobile.jpg" />
+</div>
+
+<header id="header" class="banner navbar navbar-default navbar-static-top" role="banner" data-headroom>
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

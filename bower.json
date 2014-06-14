@@ -16,7 +16,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "bootstrap": "~3.1.1",
-    "headroom.js": "~0.5.0",
+    "headroom.js": "~0.6.0",
     "modernizr": "~2.8.2",
     "font-awesome": "~4.1.0",
     "angular-touch": "~1.2.17",

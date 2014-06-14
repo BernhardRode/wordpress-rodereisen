@@ -59,12 +59,5 @@ var UTIL = {
 };
 
 $(document).ready(UTIL.loadEvents);
-  if ($('#map').length > 0) {
-    console.log('map');
-
-  } else {
-    console.log('NO map');
-  }
-
 
 })(jQuery); // Fully reference jQuery after this point.
