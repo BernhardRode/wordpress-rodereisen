@@ -12,7 +12,7 @@
         <span>ust.id. <span itemprop="taxID">DE145781171</span></span>
       </div>
       <div class="col-xs-3">
-        <address itemscope itemtype="http://schema.org/LocalBusiness">
+        <address itemscope itemtype="http://schema.org/TravelAgency">
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4>standort<strong>beilstein</strong></h4>
             <span itemprop="name" hidden>reisebüro rode beilstein</span>
@@ -23,7 +23,7 @@
         </address>
       </div>
       <div class="col-xs-3">
-        <address itemscope itemtype="http://schema.org/LocalBusiness">
+        <address itemscope itemtype="http://schema.org/TravelAgency">
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4>standort<strong>steinheim</strong></h4>
             <span itemprop="name" hidden>reisebüro rode steinheim</span>
