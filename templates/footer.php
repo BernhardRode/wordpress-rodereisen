@@ -11,7 +11,7 @@
         <span itemprop="taxID">ust.id. DE145781171</span>
       </div>
       <div class="col-xs-3">
-        <address itemscope itemtype="http://schema.org/Place">
+        <address itemscope itemtype="http://schema.org/LocalBusiness">
           <div>
             <h4 itemprop="name">standort<strong>beilstein</strong></h4>
             <span itemprop="streetAddress">oberstenfelderstr. 16</span><br>
@@ -21,7 +21,7 @@
         </address>
       </div>
       <div class="col-xs-3">
-        <address itemscope itemtype="http://schema.org/Place">
+        <address itemscope itemtype="http://schema.org/LocalBusiness">
           <div>
             <h4 itemprop="name">standort<strong>steinheim</strong></h4>
             <span itemprop="streetAddress">im klostermuseum</span><br>

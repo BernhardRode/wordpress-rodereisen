@@ -60,6 +60,7 @@
               <div class="hidden-xs margin-top-20">
                 <a class="btn btn-danger btn-lg btn-block" href="<?php echo $kontakt_url; ?>">Informationen anfordern</a>
               </div>
+              <?php get_template_part('templates/entry-meta'); ?>
             </div>
           </div>
           <div class="col col-md-8">
