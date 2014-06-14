@@ -1,4 +1,4 @@
-<article <?php post_class(); ?>>
+<article <?php post_class(); ?> itemscope itemtype="http://data-vocabulary.org/Person">
   <div class="col-xs-3 mitarbeiter-container">
     <a href="<?php the_permalink(); ?>">
       <div class="box hidden-xs">
@@ -13,7 +13,7 @@
               <?php
                 list( $vorname, $nachname ) = explode( ' ', get_the_title(),2 );
               ?>
-              <?php echo $vorname; ?><br/><strong><?php echo $nachname; ?></strong>
+              <span itemprop="name"><?php echo $vorname; ?><br/><strong><?php echo $nachname; ?></strong></span>
             </h2>
           </div>
         </div>

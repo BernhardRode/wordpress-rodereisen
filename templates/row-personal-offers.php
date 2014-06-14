@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row non-printable">
   <div class="col col-lg-12">
     <div class="page-header">
       <h1 class="gradient-red">Persönliche Angebote</h1>

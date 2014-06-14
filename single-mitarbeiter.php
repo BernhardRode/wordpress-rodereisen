@@ -31,7 +31,7 @@ class CacheAPC {
 ?>
 <div class="box">
   <?php while (have_posts()) : the_post(); ?>
-    <article <?php post_class(); ?>>
+    <article <?php post_class(); ?> itemscope itemtype="http://data-vocabulary.org/Person">
       <div class="row">
         <div class="col col-md-12">
           <a class="btn btn-primary pull-right" href="/mitarbeiter">Zurück</a>
@@ -94,7 +94,7 @@ class CacheAPC {
           <?php
             list( $vorname, $nachname ) = explode( ' ', get_the_title(),2 );
           ?>
-          <h1 class="entry-title gradient"><?php echo $vorname; ?><strong><?php echo $nachname; ?></strong></h1>
+          <h1 class="entry-title gradient" itemprop="name"><?php echo $vorname; ?><strong><?php echo $nachname; ?></strong></h1>
 
           <?php the_content(); ?>
 

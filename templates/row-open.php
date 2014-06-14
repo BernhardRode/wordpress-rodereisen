@@ -1,4 +1,4 @@
-<div class="margin-top-20 row-open">
+<div class="margin-top-20 row-open non-printable">
   <div class="row">
     <div class="col col-sm-4 text-center">
       <div class="box">
@@ -13,9 +13,15 @@
     <div class="col col-sm-4 text-center">
       <div class="box">
         <i class="fa fa-clock-o fa-5x gradient"></i>
-        <ul class="list-unstyled">
-          <li><strong>Mo bis Fr </strong><br>9.00 Uhr - 18.00 Uhr</li>
-          <li><strong>Sa: </strong>9.00 Uhr - 13.00 Uhr</li>
+        <ul class="list-unstyled" itemscope itemtype="http://schema.org/LocalBusiness">
+          <li>
+            <strong>Mo bis Fr </strong><br>9.00 Uhr - 18.00 Uhr
+            <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00">
+          </li>
+          <li>
+            <strong>Sa: </strong>9.00 Uhr - 13.00 Uhr
+            <meta itemprop="openingHours" content="Sa 09:00-13:00">
+          </li>
           <li><strong>So: </strong>geschlossen</li>
         </ul>
       </div>

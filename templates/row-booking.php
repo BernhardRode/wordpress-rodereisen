@@ -1,4 +1,4 @@
-<div class="hidden-xs">
+<div class="hidden-xs non-printable">
   <div class="row">
     <div class="col col-lg-12">
       <div class="page-header">

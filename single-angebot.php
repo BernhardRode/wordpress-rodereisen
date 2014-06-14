@@ -1,5 +1,5 @@
 <div class="">
-  <div class="row">
+  <div class="row non-printable">
     <div class="col text-center col-xs-4">
         <?php
 

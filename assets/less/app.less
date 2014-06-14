@@ -353,7 +353,8 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    // }
 
    body {
-      padding-bottom: 55px;
+      margin-top: 55px;
+      padding-bottom: 25px;
       background-color: transparent;
    }
 
@@ -539,3 +540,10 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 }
 
 @media (min-width: @screen-lg-min) { }
+
+
+@media print {
+   .non-printable {
+      display: none !important;
+   }
+}

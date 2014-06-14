@@ -1,31 +1,32 @@
-<footer class="non-printable">
+<footer class="non-printable" itemscope itemtype="http://schema.org/Organization">
   <div class="container hidden-xs">
     <div class="row">
       <div class="col-xs-3">
-        <h4>reisebüro<strong>rode</strong> gmbh</h4>
+        <h4 itemprop="name">reisebüro<strong>rode</strong> gmbh</h4>
         <address>
-          <abbr title="E-Mail">e:</abbr> <a href="mailto:info@rodereisen.de"><span property="v:mail">info@rodereisen.de<span property="v:tel"></a><br>
-          <abbr title="Fax">f:</abbr> +49 (0)7062 949994
+          <abbr title="E-Mail">e:</abbr> <a href="mailto:info@rodereisen.de" itemprop="url">info@rodereisen.de</a><br>
+          <abbr title="Webseite">w:</abbr> <a href="http://www.rodereisen.de" itemprop="url">www.rodereisen.de</a><br>
+          <abbr title="Fax">f:</abbr> <span itemprop="faxNumber">+49 (0)7062 949994</span>
         </address>
-        <span>ust.id. DE145781171</span>
+        <span itemprop="taxID">ust.id. DE145781171</span>
       </div>
       <div class="col-xs-3">
-        <address rel="v:address">
-          <div typeof="v:Address">
-            <h4>standort<strong>beilstein</strong></h4>
-            <span property="v:street-address">oberstenfelderstr. 16</span><br>
-            d-71717 beilstein<br>
-            <abbr title="Phone">p:</abbr> <a href="tel:+49706294990"><span property="v:tel">+49 (0)7062 94990</span></a>
+        <address itemscope itemtype="http://schema.org/Place">
+          <div>
+            <h4 itemprop="name">standort<strong>beilstein</strong></h4>
+            <span itemprop="streetAddress">oberstenfelderstr. 16</span><br>
+            d-<span itemprop="postalCode">71717</span> <span itemprop="addressLocality">beilstein</span><br>
+            <abbr>p:</abbr> <a href="tel:+49706294990"><span itemprop="telephone">+49 (0)7062 94990</span></a>
           </div>
         </address>
       </div>
       <div class="col-xs-3">
-        <address rel="v:address">
-          <div typeof="v:Address">
-            <h4>standort<strong>steinheim</strong></h4>
-            <span property="v:street-address">im klostermuseum</span><br>
-            <span property="v:locality">d-71711 steinheim</span><br>
-            <abbr title="Phone">p:</abbr> <a href="tel:+49714481550"><span property="v:tel">+49 (0)7144 81550</span></a>
+        <address itemscope itemtype="http://schema.org/Place">
+          <div>
+            <h4 itemprop="name">standort<strong>steinheim</strong></h4>
+            <span itemprop="streetAddress">im klostermuseum</span><br>
+            d-<span itemprop="postalCode">71711</span> <span itemprop="addressLocality">steinheim</span><br>
+            <abbr title="Phone">p:</abbr> <a href="tel:+49714481550"><span itemprop="telephone">+49 (0)7144 81550</span></a>
           </div>
         </address>
       </div>
