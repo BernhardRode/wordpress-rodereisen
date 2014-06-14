@@ -12,7 +12,7 @@
       </div>
       <div class="col-xs-3">
         <address itemscope itemtype="http://schema.org/LocalBusiness">
-          <div>
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4 itemprop="name">standort<strong>beilstein</strong></h4>
             <span itemprop="streetAddress">oberstenfelderstr. 16</span><br>
             d-<span itemprop="postalCode">71717</span> <span itemprop="addressLocality">beilstein</span><br>
@@ -22,7 +22,7 @@
       </div>
       <div class="col-xs-3">
         <address itemscope itemtype="http://schema.org/LocalBusiness">
-          <div>
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4 itemprop="name">standort<strong>steinheim</strong></h4>
             <span itemprop="streetAddress">im klostermuseum</span><br>
             d-<span itemprop="postalCode">71711</span> <span itemprop="addressLocality">steinheim</span><br>
