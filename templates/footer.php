@@ -11,11 +11,11 @@
           <abbr title="Fax">f:</abbr> <span itemprop="faxNumber">+49 (0)7062 949994</span>
         </address>
         <span>ust.id. <span itemprop="taxID">DE145781171</span></span>
-        <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00" hidden>
-        <meta itemprop="openingHours" content="Sa 09:00-13:00" hidden>
       </div>
       <div class="col-xs-3">
         <address itemscope itemtype="http://schema.org/TravelAgency">
+          <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00" hidden>
+          <meta itemprop="openingHours" content="Sa 09:00-13:00" hidden>
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4>standort<strong>beilstein</strong></h4>
             <span itemprop="name" hidden>reisebüro rode beilstein</span>
@@ -27,6 +27,8 @@
       </div>
       <div class="col-xs-3">
         <address itemscope itemtype="http://schema.org/TravelAgency">
+          <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00" hidden>
+          <meta itemprop="openingHours" content="Sa 09:00-13:00" hidden>
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4>standort<strong>steinheim</strong></h4>
             <span itemprop="name" hidden>reisebüro rode steinheim</span>
