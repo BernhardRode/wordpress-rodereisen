@@ -9,7 +9,7 @@
 
   <p class="byline author vcard">
     <?php echo __('By', 'roots'); ?>
-    <a href="<?php echo the_author_meta('url'); ?>?rel=author" rel="author-Link" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" classn="fn">
+    <a href="<?php echo the_author_meta('url'); ?>?rel=author" rel="author-Link" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" class="fn">
       <?php echo get_the_author(); ?>
     </a>
   </p>
