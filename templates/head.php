@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/rodereisen.png" type="image/png" />
   <?php wp_head(); ?>
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>" />
 
-  <?php 
+  <?php
     $title = "Reisebüro Rode GmbH | wir kümmern uns. um sie.";
     $image = get_template_directory_uri() . "/assets/img/rodereisen.png";
     $url = "http://www.rodereisen.de" . "?utm_source=social_media";
@@ -17,20 +17,20 @@
 
     if ( is_single() || is_page() ) {
       $title = get_the_title('|', true, 'right');
-      
+
       if ( has_post_thumbnail() ) {
         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
         $image = "http://www.rodereisen.de" . $large_image_url['0'];
       }
-    
+
       $url = get_permalink() . "?utm_source=social_media";
       #$description = strip_tags(get_the_excerpt());
-    } 
+    }
   ?>
-  
+
   <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> - <?php } ?> <?php wp_title(); ?></title>
   <meta name="description" content="<?php echo $description; ?>" />
-  
+
   <!-- BEGIN OF META TAGS -->
   <!-- Global Meta Tags -->
   <meta property="place:location:latitude" content="49.037170"/>
@@ -64,7 +64,7 @@
   <meta property="og:site_name" content="<?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> - <?php } ?> <?php wp_title(); ?>"/>
   <meta property="og:see_also" content="http://www.rodereisen.de"/>
   <!-- END OF META TAGS -->
-  
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
