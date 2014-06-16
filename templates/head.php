@@ -31,7 +31,7 @@
       global $post;
       setup_postdata($post);
     ?>
-      <meta name=”description” content=”<?php the_excerpt_rss(); ?>” />
+      <meta name=”description” content=”<?php strip_tags( the_excerpt_rss() ); ?>” />
     <?php } else { ?>
       <meta name="description" content="<?php echo $description; ?>" />
     <?php } ?>
