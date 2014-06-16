@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/rodereisen.png" type="image/png" />
   <?php wp_head(); ?>
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>" />
@@ -27,17 +27,17 @@
       #$description = strip_tags(get_the_excerpt());
     }
     
-if (is_singular()) {
-  global $post;
-  setup_postdata($post);
-?>
-  <meta name=”description” content=”<?php strip_tags( the_excerpt_rss() ); ?>” />
-<?php } else { ?>
-  <meta name="description" content="<?php echo $description; ?>" />
-<?php } ?>
+  if (is_singular()) {
+    global $post;
+    setup_postdata($post);
     
+    $description = "";
+  }
+?>
+      
   <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> - <?php } ?> <?php wp_title(); ?></title>
   <!-- BEGIN OF META TAGS -->
+  <meta name="description" content="<?php echo $description; ?>" />
   <!-- Global Meta Tags -->
   <meta property="place:location:latitude" content="49.037170"/>
   <meta property="place:location:longitude" content="9.316270"/>
