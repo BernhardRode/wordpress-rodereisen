@@ -31,7 +31,7 @@
     global $post;
     setup_postdata($post);
     
-    $description = "";
+    $description = substr( get_the_excerpt(), 0, 156 );
   }
 ?>
       
