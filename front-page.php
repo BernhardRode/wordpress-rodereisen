@@ -7,9 +7,7 @@ Template Name: Home Template
 
 <div class="row">
   <div class="col col-lg-12">
-    <div class="box">
-      <?php get_template_part('templates/content', 'page'); ?>
-    </div>
+    <?php get_template_part('templates/content', 'page'); ?>
   </div>
 </div>
 
