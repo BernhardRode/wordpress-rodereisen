@@ -27,19 +27,16 @@
       #$description = strip_tags(get_the_excerpt());
     }
     
-    if (is_singular()) {
-      global $post;
-      setup_postdata($post);
-    ?>
-      <meta name=”description” content=”<?php strip_tags( the_excerpt_rss() ); ?>” />
-    <?php } else { ?>
-      <meta name="description" content="<?php echo $description; ?>" />
-    <?php } ?>
-  ?>
-
+if (is_singular()) {
+  global $post;
+  setup_postdata($post);
+?>
+  <meta name=”description” content=”<?php strip_tags( the_excerpt_rss() ); ?>” />
+<?php } else { ?>
+  <meta name="description" content="<?php echo $description; ?>" />
+<?php } ?>
+    
   <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> - <?php } ?> <?php wp_title(); ?></title>
-
-
   <!-- BEGIN OF META TAGS -->
   <!-- Global Meta Tags -->
   <meta property="place:location:latitude" content="49.037170"/>
