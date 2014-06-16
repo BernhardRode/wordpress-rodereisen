@@ -35,7 +35,7 @@
   }
 ?>
       
-  <title><?php //bloginfo('name'); ?> <?php wp_title(); ?></title>
+  <title><?php wp_title( '|', true, 'right' ); ?></title>
   <!-- BEGIN OF META TAGS -->
   <meta name="description" content="<?php echo $description; ?>" />
   <!-- Global Meta Tags -->
