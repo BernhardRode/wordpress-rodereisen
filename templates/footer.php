@@ -14,11 +14,11 @@
       </div>
       <div class="col-xs-3">
         <address itemscope itemtype="http://schema.org/TravelAgency">
+          <span itemprop="name" hidden>reisebüro rode beilstein</span>
           <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00" hidden>
           <meta itemprop="openingHours" content="Sa 09:00-13:00" hidden>
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4>standort<strong>beilstein</strong></h4>
-            <span itemprop="name" hidden>reisebüro rode beilstein</span>
             <span itemprop="streetAddress">oberstenfelderstr. 16</span><br>
             d-<span itemprop="postalCode">71717</span> <span itemprop="addressLocality">beilstein</span><br>
             <abbr>p:</abbr> <a href="tel:+49706294990"><span itemprop="telephone">+49 (0)7062 94990</span></a>
@@ -27,11 +27,11 @@
       </div>
       <div class="col-xs-3">
         <address itemscope itemtype="http://schema.org/TravelAgency">
+          <span itemprop="name" hidden>reisebüro rode steinheim</span>
           <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00" hidden>
           <meta itemprop="openingHours" content="Sa 09:00-13:00" hidden>
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4>standort<strong>steinheim</strong></h4>
-            <span itemprop="name" hidden>reisebüro rode steinheim</span>
             <span itemprop="streetAddress">im klostermuseum</span><br>
             d-<span itemprop="postalCode">71711</span> <span itemprop="addressLocality">steinheim</span><br>
             <abbr title="Phone">p:</abbr> <a href="tel:+49714481550"><span itemprop="telephone">+49 (0)7144 81550</span></a>
