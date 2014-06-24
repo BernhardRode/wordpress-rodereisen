@@ -24,14 +24,14 @@ Template Name: Contact Template
       <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label hidden-xs">Name</label><p></p>
       <div class="col-sm-10">
-            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Vor- &amp; Nachname"></span>
+            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Vor- &amp; Nachname"  autocomplete="name"></span>
           </div>
       <p></p></div>
       <div class="clearfix"></div>
       <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label hidden-xs">E-Mail</label><p></p>
       <div class="col-sm-10">
-            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="E-Mail Adresse"></span>
+            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="E-Mail Adresse" autocomplete="email"></span>
           </div>
       <p></p></div>
       <div class="clearfix"></div>
