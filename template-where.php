@@ -46,7 +46,7 @@ Template Name: Where Template
           <div class="col col-xs-7">
             <address>
               <h4>standort<strong>steinheim</strong></h4>
-              im klostermuseum<br>
+              friedrichstraße 8<br>
               d-71711 steinheim<br>
               <abbr title="Phone">p:</abbr> <a href="tel:+49714481550">+49 (0)7144 81550</a>
             </address>
