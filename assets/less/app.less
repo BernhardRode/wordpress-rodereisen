@@ -230,22 +230,6 @@ h2.entry-title {
       overflow:hidden;
    }
 
-   &:hover {
-      & > img {
-         -webkit-animation-name: pulse;
-         -moz-animation-name: pulse;
-         -ms-animation-name: pulse;
-         -o-animation-name: pulse;
-         animation-name: pulse;
-
-         -webkit-animation-iteration-count: infinite;
-         -moz-animation-iteration-count: infinite;
-         -ms-animation-iteration-count: infinite;
-         -o-animation-iteration-count: infinite;
-         animation-iteration-count: infinite;
-      }
-   }
-
    .titel {
       height:70px;
       overflow:hidden;
@@ -514,6 +498,20 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
       &:hover {
          background-color: @rr-white;
+
+         .img-circle {
+            -webkit-animation-name: pulse;
+            -moz-animation-name: pulse;
+            -ms-animation-name: pulse;
+            -o-animation-name: pulse;
+            animation-name: pulse;
+
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -ms-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+         }
       }
    }
 

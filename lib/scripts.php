@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'cdd74aa0baa480010a424d9f532210fa');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '711e360cdce41ebc832ad52f4763c839');
   wp_enqueue_style('animate', get_template_directory_uri() . '/assets/bower_components/animate.css/animate.min.css', false, '3.1.1');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
@@ -19,7 +19,7 @@ function roots_scripts() {
   // It's kept in the header instead of footer to avoid conflicts with plugins.
   if (!is_admin() && current_theme_supports('jquery-cdn')) {
     wp_deregister_script('jquery');
-    wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), null, false);
+    wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js', array(), '2.1.1', false);
     add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
   }
 
