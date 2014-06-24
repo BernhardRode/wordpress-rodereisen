@@ -96,7 +96,7 @@ function initialize() {
       });
   };
   codeAddress('Reisebüro Rode GmbH, Oberstenfelderstr.16, D-71717 Beilstein');
-  codeAddress('Reisebüro Rode GmbH, Im Klostermuseum, D-71711 Steinheim');
+  codeAddress('Reisebüro Rode GmbH, Friedrichstraße 8, D-71711 Steinheim');
 
   google.maps.event.addListener(map, "rightclick", function(event) {
       var lat = event.latLng.lat();
