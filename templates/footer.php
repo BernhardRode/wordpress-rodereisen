@@ -32,7 +32,7 @@
           <meta itemprop="openingHours" content="Sa 09:00-13:00" hidden>
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <h4>standort<strong>steinheim</strong></h4>
-            <span itemprop="streetAddress">im klostermuseum</span><br>
+            <span itemprop="streetAddress">Friedrichstraße 8</span><br>
             d-<span itemprop="postalCode">71711</span> <span itemprop="addressLocality">steinheim</span><br>
             <abbr title="Phone">p:</abbr> <a href="tel:+49714481550"><span itemprop="telephone">+49 (0)7144 81550</span></a>
           </div>
