@@ -11,7 +11,7 @@
   <div class="row margin-top-20">
     <div class="col-lg-12">
       <div class="box">
-        <?php get_template_part('templates/content', get_post_format()); ?>
+        <?php get_template_part('templates/content-single', get_post_format()); ?>
       </div>
     </div>
   </div>

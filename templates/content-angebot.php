@@ -33,7 +33,6 @@
       </div>
     </div>
   </div>
-
   <div class="visible-xs">
     <div class="col col-lg-12">
       <div class="row">
