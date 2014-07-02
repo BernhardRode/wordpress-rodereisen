@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col col-xs-3 text-center">
       <a class="" href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail('thumbnail', array('class' => 'img-circle img-responsive img-shadow')); ?>
+        <?php the_post_thumbnail('thumbnail', array('class' => 'img-circle')); ?>
       </a>
       <?php get_template_part('templates/entry-meta'); ?>
     </div>
