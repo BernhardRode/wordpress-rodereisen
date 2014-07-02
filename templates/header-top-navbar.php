@@ -44,7 +44,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/wir">
+                  <a href="/mitarbeiter">
                     <i class="fa fa-user"></i>
                     <p>Wir</p>
                   </a>
