@@ -86,7 +86,7 @@
         &nbsp;|&nbsp;
         <a href="/impressum">impressum</a>
         <br>
-        copyright &copy; <?php auto_copyright('1983');  // 2010 - 2011 ?> reisebüro<strong>rode</strong> gmbh. alle rechte vorbehalten.
+        copyright &copy; <?php auto_copyright('1984');  // 2010 - 2011 ?> reisebüro<strong>rode</strong> gmbh. alle rechte vorbehalten.
       </small>
     </div>
   </div>
