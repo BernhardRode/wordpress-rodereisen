@@ -6,6 +6,7 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @import "variables.less";
+@import "ct-navbar.less";
 
 /* ==========================================================================
    Base
@@ -41,30 +42,6 @@ textarea {
 
 .banner { }
 
-.navbar-default {
-   background-color: @rr-white;
-   // -webkit-transition:all 3s linear;
-   // -moz-transition:all 3s linear;
-   // transition:all .6s linear;
-   font-weight:bold;
-   border:0;
-
-   // &:hover {
-   //    background-color: @rr-blue;
-   // }
-
-   .navbar-brand {
-      background: url(../img/rr.png) center left no-repeat @rr-white;
-      background-size: 100%;
-      color: transparent !important;
-      border-right:10px solid @rr-white;
-      border-left:10px solid @rr-white;
-
-      width:200px;
-   }
-
-}
-
 .page-header {
    border:none;
    margin:0;
@@ -73,8 +50,6 @@ textarea {
       font-weight: 700;
    }
 }
-
-
 
 /* ==========================================================================
    Content
@@ -376,52 +351,52 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 @media (min-width: @screen-sm-min) {
 
-   #menu-primary-navigation {
-      margin-left:30px;
+   // #menu-primary-navigation {
+   //    margin-left:30px;
 
-      .navbar-nav {
-         li {
-            a {
-               color:red;
-            }
-         }
-      }
-   }
+   //    .navbar-nav {
+   //       li {
+   //          a {
+   //             color:red;
+   //          }
+   //       }
+   //    }
+   // }
 
-   .navbar-default {
-      background-color: transparent;
-     .navbar-nav {
-         margin-top:8px;
-         float:right;
+   // .navbar-default {
+   //    background-color: transparent;
+   //   .navbar-nav {
+   //       margin-top:8px;
+   //       float:right;
 
-         li {
-            margin-left:20px;
-            border-radius: 3px;
+   //       li {
+   //          margin-left:20px;
+   //          border-radius: 3px;
 
-            a {
-               text-transform: lowercase;
-               color:@rr-blue-alpha-80;
-               border:1px solid @rr-blue-alpha-80;
-               background-color: transparent;
-               border-radius:3px;
-               transition: 0.7s background-color linear;
+   //          a {
+   //             text-transform: lowercase;
+   //             color:@rr-blue-alpha-80;
+   //             border:1px solid @rr-blue-alpha-80;
+   //             background-color: transparent;
+   //             border-radius:3px;
+   //             transition: 0.7s background-color linear;
 
-               &:hover {
-                  color:@rr-white;
-                  border:1px solid @rr-white;
-                  background-color: @rr-blue-alpha-70;
-               }
-            }
-         }
-      }
-   }
-   .navbar-brand {
-      border-radius: 0 0 10px 10px;
-      margin-left:0px !important;
-   }
+   //             &:hover {
+   //                color:@rr-white;
+   //                border:1px solid @rr-white;
+   //                background-color: @rr-blue-alpha-70;
+   //             }
+   //          }
+   //       }
+   //    }
+   // }
+   // .navbar-brand {
+   //    border-radius: 0 0 10px 10px;
+   //    margin-left:0px !important;
+   // }
 
    body {
-      padding-top: 85px;
+      padding-top: 150px;
       padding-bottom: 150px;
 
       background: no-repeat center center fixed;
@@ -490,7 +465,6 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
       border-radius: 10px;
       border:1px solid #ddd;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
 
       -webkit-transition:all 3s linear;
       -moz-transition:all 3s linear;
