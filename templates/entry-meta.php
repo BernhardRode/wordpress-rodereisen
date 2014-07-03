@@ -8,7 +8,17 @@
   </time>
   <p class="byline author vcard">
     <?php echo __('By', 'roots'); ?>
-    <a href="/mitarbeiter/<?php the_author_meta('user_firstname'); ?>-<?php the_author_meta('user_lastname'); ?>/"><?php echo get_the_author(); ?></a>
+    <?php
+      $firstname = get_the_author_meta('user_firstname');
+      $lastname = get_the_author_meta('user_lastname');
+
+      $url = $firstname . '-' . $lastname;
+      $umlaute = Array("/ä/","/ö/","/ü/","/Ä/","/Ö/","/Ü/","/ß/");
+      $replace = Array("a","o","u","A","O","U","ss");
+      $url = preg_replace($umlaute,$replace,$url);
+      $url = strtolower($url);
+    ?>
+    <a href="/mitarbeiter/<?php echo $url; ?>"><?php echo get_the_author(); ?></a>
     <br>
     Profil auf <a href="<?php echo the_author_meta('url'); ?>" rel="author" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" class="fn">Google+</a>
   </p>
