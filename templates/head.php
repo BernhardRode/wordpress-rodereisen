@@ -53,7 +53,7 @@
   <meta name="twitter:domain" content="rodereisen.de" />
   <!-- Facebook Meta Tags -->
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="<<?php echo $title;?>"/>
+  <meta property="og:title" content="<?php echo $title;?>"/>
   <meta property="og:description" content="<?php echo $description; ?>"/>
   <meta property="og:image" content="<?php echo $image; ?>"/>
   <meta property="og:url" content="<?php echo $url; ?>"/>
