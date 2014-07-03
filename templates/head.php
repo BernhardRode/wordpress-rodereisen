@@ -16,7 +16,7 @@
     $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
 
     if ( is_single() || is_page() ) {
-      $title = the_title('|', '', false);
+      $title = the_title('|', false, 'right');
 
       if ( has_post_thumbnail() ) {
         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
@@ -35,7 +35,7 @@
   }
 ?>
 
-  <title><?php wp_title( '|', true, 'right' ); ?></title>
+  <title><?php echo $title;?></title>
   <!-- BEGIN OF META TAGS -->
   <meta name="description" content="<?php echo $description; ?>" />
   <!-- Google+ Meta Tags -->
