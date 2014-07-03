@@ -79,7 +79,7 @@ class CacheAPC {
               </div>
             <?php endif; ?>
             <?php if( get_field('field_538ded2b7dfcb') ): ?>
-              <div class="g-person" data-width="273" data-href="<?php the_field('field_538ded2b7dfcb'); ?>" data-layout="landscape" data-showtagline="false" data-showcoverphoto="false" data-rel="author"></div>
+              <!--<div class="g-person" data-width="273" data-href="<?php the_field('field_538ded2b7dfcb'); ?>" data-layout="landscape" data-showtagline="false" data-showcoverphoto="false" data-rel="author"></div>-->
             <?php endif; ?>
           </div>
         </div>
