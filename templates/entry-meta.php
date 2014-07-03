@@ -14,7 +14,7 @@
 
       $url = $firstname . '-' . $lastname;
       $umlaute = Array("/ä/","/ö/","/ü/","/Ä/","/Ö/","/Ü/","/ß/");
-      $replace = Array("a","o","u","A","O","U","ss");
+      $replace = Array("ae","oe","ue","Ae","Oe","Ue","ss");
       $url = preg_replace($umlaute,$replace,$url);
       $url = strtolower($url);
     ?>
