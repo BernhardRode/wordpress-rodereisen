@@ -15,7 +15,9 @@
     $url = "http://www.rodereisen.de" . "?utm_source=social_media";
     $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
 
-    if ( is_single() || is_page() ) {
+    if ( is_single() || is_page() || is_singular() ) {
+      global $post;
+      setup_postdata($post);
       $title = get_the_title() . " | Reisebüro Rode GmbH";
 
       if ( has_post_thumbnail() ) {
@@ -25,14 +27,9 @@
 
       $url = get_permalink();
       #$description = strip_tags(get_the_excerpt());
+      $description = substr( get_the_excerpt(), 0, 156 );
     }
 
-  if (is_singular()) {
-    global $post;
-    setup_postdata($post);
-
-    $description = substr( get_the_excerpt(), 0, 156 );
-  }
 ?>
 
   <title><?php echo $title;?></title>
@@ -60,6 +57,10 @@
   <meta property="og:site_name" content="<?php echo $title;?>"/>
   <meta property="og:see_also" content="http://www.rodereisen.de"/>
   <!-- Global Meta Tags -->
+  <meta property="article:published_time" content="2014-06-30T14:58:54+00:00" />
+  <meta property="article:modified_time" content="2014-07-02T12:26:39+00:00" />
+  <meta property="article:author" content="http://www.sg-bottwartal.de/author/ilka/" />
+  <!--
   <meta property="place:location:latitude" content="49.037170"/>
   <meta property="place:location:longitude" content="9.316270"/>
   <meta property="business:contact_data:street_address" content="Oberstenfelderstr. 16"/>
@@ -69,6 +70,7 @@
   <meta property="business:contact_data:email" content="info@rodereisen.de"/>
   <meta property="business:contact_data:phone_number" content="+49 706294990"/>
   <meta property="business:contact_data:website" content="http://www.rodereisen.de"/>
+  -->
   <!-- END OF META TAGS -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
