@@ -8,9 +8,9 @@
   </time>
   <p class="byline author vcard">
     <?php echo __('By', 'roots'); ?>
-    <a href="mailto:<?php the_author_meta('user_email'); ?>"><?php echo get_the_author(); ?></a>
+    <a href="/mitarbeiter/<?php the_author_meta('user_firstname'); ?>-<?php the_author_meta('user_lastname'); ?>/"><?php echo get_the_author(); ?></a>
     <br>
-    <a href="<?php echo the_author_meta('url'); ?>" rel="author" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" class="fn">Google+</a>
+    Profil auf <a href="<?php echo the_author_meta('url'); ?>" rel="author" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" class="fn">Google+</a>
   </p>
   <g:hangout render="createhangout" invites="[{ id : '<?php the_author_meta('user_email'); ?>', invite_type : 'EMAIL' }]"></g:hangout>
   <script type="text/javascript">
