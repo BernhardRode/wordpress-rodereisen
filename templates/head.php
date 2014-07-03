@@ -13,7 +13,7 @@
     $title = "Reisebüro Rode GmbH | wir kümmern uns. um sie.";
     $image = "http://www.rodereisen.de" . get_template_directory_uri() . "/assets/img/rodereisen.png";
     $url = "http://www.rodereisen.de" . "?utm_source=social_media";
-    $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
+    $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner! Über 30 Jahre Erfahrungen sprechen für sich.";
     if ( is_single() || is_page() || is_singular() ) {
       global $post;
       setup_postdata($post);
