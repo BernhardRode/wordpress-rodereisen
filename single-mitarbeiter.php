@@ -73,23 +73,26 @@ class CacheAPC {
               </li>
             <?php endif; ?>
             </ul>
+            <?php if( get_field('field_538dece97dfcb') ): ?>
+              <div>
+                <g:hangout render="createhangout" invites="[{ id : '<?php the_field('field_538dece97dfcb'); ?>', invite_type : 'EMAIL' }]"></g:hangout>
+              </div>
+            <?php endif; ?>
             <?php if( get_field('field_538ded2b7dfcb') ): ?>
-              <!-- Fügen Sie dieses Tag an der Stelle ein, an der die Widget erscheinen soll. -->
               <div class="g-person" data-width="273" data-href="<?php the_field('field_538ded2b7dfcb'); ?>" data-layout="landscape" data-showtagline="false" data-showcoverphoto="false" data-rel="author"></div>
-
-              <!-- Fügen Sie dieses Tag nach dem letzten Widget-Tag ein. -->
-              <script type="text/javascript">
-                window.___gcfg = {lang: 'de'};
-
-                (function() {
-                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                  po.src = 'https://apis.google.com/js/platform.js';
-                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                })();
-              </script>
             <?php endif; ?>
           </div>
         </div>
+        <!-- Fügen Sie dieses Tag nach dem letzten Widget-Tag ein. -->
+        <script type="text/javascript">
+          window.___gcfg = {lang: 'de'};
+
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
         <div class="col col-md-8">
           <?php
             list( $vorname, $nachname ) = explode( ' ', get_the_title(),2 );
