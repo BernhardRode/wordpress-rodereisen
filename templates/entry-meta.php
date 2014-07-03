@@ -9,9 +9,7 @@
 
   <p class="byline author vcard">
     <?php echo __('By', 'roots'); ?>
-    <a href="<?php echo the_author_meta('url'); ?>?rel=author" rel="author-Link" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" class="fn">
-      <?php echo get_the_author(); ?>
-    </a>
+    <?php echo get_the_author(); ?> auf <a href="<?php echo the_author_meta('url'); ?>" rel="author" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" class="fn">Google+</a>
   </p>
   <?php $user_info = get_userdata(); ?>
   <g:hangout render="createhangout" invites="[{ id : '<?php echo $user_info->user_email; ?>', invite_type : 'EMAIL' }]"></g:hangout>
