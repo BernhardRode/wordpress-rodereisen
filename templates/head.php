@@ -19,7 +19,7 @@
       $title = get_the_title('|', true, 'right');
 
       if ( has_post_thumbnail() ) {
-        $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
+        $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
         $image = "http://www.rodereisen.de" . $large_image_url['0'];
       }
 
