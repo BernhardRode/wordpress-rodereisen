@@ -6,7 +6,6 @@
   <time class="updated" datetime="<?php echo get_the_time('c'); ?>" hidden>
     <?php echo get_the_date(); ?>
   </time>
-  <?php $user_info = the_author_meta('user_email'); ?>
   <p class="byline author vcard">
     <?php echo __('By', 'roots'); ?>
     <a href="mailto:<?php the_author_meta('user_email'); ?>"><?php echo get_the_author(); ?></a>
