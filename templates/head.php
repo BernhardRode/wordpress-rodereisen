@@ -23,7 +23,7 @@
         $image = "http://www.rodereisen.de" . $large_image_url['0'];
       }
 
-      $url = get_permalink() . "?utm_source=social_media";
+      $url = get_permalink();
       #$description = strip_tags(get_the_excerpt());
     }
 
