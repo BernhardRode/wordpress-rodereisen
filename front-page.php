@@ -7,15 +7,15 @@ Template Name: Home Template
 
 
 
-<div class="row">
+<div class="row hidden-xs">
   <div class="col col-lg-12">
     <?php get_template_part('templates/row-rr-slider'); ?>
   </div>
 </div>
 
-<div class="row">
-  <div class="col col-lg-12 hidden-xs">
-    <?php get_template_part('templates/content', 'page'); ?>
+<div class="row hidden-xs">
+  <div class="col col-lg-12">
+    <?php //get_template_part('templates/content', 'page'); ?>
   </div>
 </div>
 

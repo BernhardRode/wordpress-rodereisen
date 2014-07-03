@@ -80,7 +80,6 @@
   <meta property="business:contact_data:website" content="http://www.rodereisen.de"/>
   -->
   <!-- END OF META TAGS -->
-  <link href="https://fonts.googleapis.com/css?family=Pacifico|Dancing+Script|Neuton" rel="stylesheet" type="text/css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
