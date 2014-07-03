@@ -60,10 +60,10 @@
   <meta property="og:site_name" content="<?php echo $title;?>"/>
   <meta property="og:see_also" content="http://www.rodereisen.de"/>
   <!-- Global Meta Tags -->
-  <?php if( $post_time ): ?>
+  <?php if( isset($post_time) ): ?>
     <meta property="article:published_time" content="<? echo $post_time; ?>" />
   <?php endif; ?>
-  <?php if( $post_modified_time ): ?>
+  <?php if( isset($post_modified_time) ): ?>
     <meta property="article:modified_time" content="<? echo $post_modified_time; ?>" />
     <meta property="og:updated_time" content="<? echo $post_modified_time; ?>" />
   <?php endif; ?>
