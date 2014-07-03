@@ -4,7 +4,7 @@
       <div class="box hidden-xs">
         <div class="row">
           <div class="col col-xs-8 col-xs-offset-2 text-center">
-            <?php the_post_thumbnail('thumbnail', array('class' => 'img-circle img-responsive')); ?>
+            <?php the_post_thumbnail('thumbnail', array('class' => 'img-circle')); ?>
           </div>
         </div>
         <div class="row hidden-xs">
