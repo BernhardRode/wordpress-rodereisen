@@ -6,13 +6,14 @@
   <time class="updated" datetime="<?php echo get_the_time('c'); ?>" hidden>
     <?php echo get_the_date(); ?>
   </time>
-
+  <?php $user_info = the_author_meta('user_email'); ?>
   <p class="byline author vcard">
     <?php echo __('By', 'roots'); ?>
-    <?php echo get_the_author(); ?> auf <a href="<?php echo the_author_meta('url'); ?>" rel="author" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" class="fn">Google+</a>
+    <a href="mailto:<?php the_author_meta('user_email'); ?>"><?php echo get_the_author(); ?></a>
+    <br>
+    <a href="<?php echo the_author_meta('url'); ?>" rel="author" target="_blank" title="Google Plus Profile von <?php echo get_the_author(); ?>" class="fn">Google+</a>
   </p>
-  <?php $user_info = get_userdata(); ?>
-  <g:hangout render="createhangout" invites="[{ id : '<?php echo $user_info->user_email; ?>', invite_type : 'EMAIL' }]"></g:hangout>
+  <g:hangout render="createhangout" invites="[{ id : '<?php the_author_meta('user_email'); ?>', invite_type : 'EMAIL' }]"></g:hangout>
   <script type="text/javascript">
     window.___gcfg = {lang: 'de'};
 
