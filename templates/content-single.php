@@ -1,13 +1,13 @@
 <article <?php post_class(); ?>>
 
   <div class="row">
-    <div class="col col-xs-3 text-center">
+    <div class="col col-md-3 text-center">
       <a class="" href="<?php the_permalink(); ?>">
         <?php the_post_thumbnail('thumbnail', array('class' => 'img-circle')); ?>
       </a>
       <?php get_template_part('templates/entry-meta'); ?>
     </div>
-    <div class="col col-xs-9">
+    <div class="col col-md-9">
       <header>
         <h2 class="gradient-red">
           <?php the_title(); ?>
