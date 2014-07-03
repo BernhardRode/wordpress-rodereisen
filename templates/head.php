@@ -14,7 +14,6 @@
     $image = "http://www.rodereisen.de" . get_template_directory_uri() . "/assets/img/rodereisen.png";
     $url = "http://www.rodereisen.de" . "?utm_source=social_media";
     $description = "Sie suchen Ihren nächsten Traumurlaub ✓ Dann sind wir Ihr Partner  Über 30 Jahre Erfahrungen sprechen für sich.";
-
     if ( is_single() || is_page() || is_singular() ) {
       global $post;
       setup_postdata($post);
@@ -24,6 +23,9 @@
         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
         $image = "http://www.rodereisen.de" . $large_image_url['0'];
       }
+
+      $post_time = get_post_time('c', true);
+      $post_modified_time = get_post_modified_time('c', true);
 
       $url = get_permalink();
       #$description = strip_tags(get_the_excerpt());
@@ -50,6 +52,7 @@
   <meta name="twitter:domain" content="rodereisen.de" />
   <!-- Facebook Meta Tags -->
   <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="de_DE"/>
   <meta property="og:title" content="<?php echo $title;?>"/>
   <meta property="og:description" content="<?php echo $description; ?>"/>
   <meta property="og:image" content="<?php echo $image; ?>"/>
@@ -57,9 +60,14 @@
   <meta property="og:site_name" content="<?php echo $title;?>"/>
   <meta property="og:see_also" content="http://www.rodereisen.de"/>
   <!-- Global Meta Tags -->
-  <meta property="article:published_time" content="2014-06-30T14:58:54+00:00" />
-  <meta property="article:modified_time" content="2014-07-02T12:26:39+00:00" />
-  <meta property="article:author" content="http://www.sg-bottwartal.de/author/ilka/" />
+  <?php if( $post_time ): ?>
+    <meta property="article:published_time" content="<? echo $post_time; ?>" />
+  <?php endif; ?>
+  <?php if( $post_modified_time ): ?>
+    <meta property="article:modified_time" content="<? echo $post_modified_time; ?>" />
+    <meta property="og:updated_time" content="<? echo $post_modified_time; ?>" />
+  <?php endif; ?>
+  <meta property="article:publisher" content="https://www.facebook.com/ReisebueroRode" />
   <!--
   <meta property="place:location:latitude" content="49.037170"/>
   <meta property="place:location:longitude" content="9.316270"/>
