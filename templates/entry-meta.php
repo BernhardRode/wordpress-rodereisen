@@ -13,4 +13,15 @@
       <?php echo get_the_author(); ?>
     </a>
   </p>
+  <?php $user_info = get_userdata(); ?>
+  <g:hangout render="createhangout" invites="[{ id : '<?php echo $user_info->user_email; ?>', invite_type : 'EMAIL' }]"></g:hangout>
+  <script type="text/javascript">
+    window.___gcfg = {lang: 'de'};
+
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
 </div>
