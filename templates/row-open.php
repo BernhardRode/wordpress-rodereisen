@@ -4,9 +4,30 @@
       <div class="box">
         <i class="fa fa-info fa-5x gradient"></i>
         <ul class="list-unstyled">
-          <li><strong>Beilstein</strong><a href="tel:0049706294990" class="btn btn-success">+49 (0)7062 94990</a></li>
-          <li><strong>Steinheim</strong><a href="tel:0049714481550" class="btn btn-success">+49 (0)7144 81550</a></li>
-          <li><strong>Mail</strong><a href="mailto:info@rodereisen.de" class="btn btn-success">info@rodereisen.de</a></li>
+          <li>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Beilstein</label>
+              <div class="col-sm-10">
+                <a href="tel:0049706294990" class="btn btn-success">+49 (0)7062 94990</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Steinheim</label>
+              <div class="col-sm-10">
+                <a href="tel:0049714481550" class="btn btn-success">+49 (0)7144 81550</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Mail</label>
+              <div class="col-sm-10">
+                <a href="mailto:info@rodereisen.de" class="btn btn-success">info@rodereisen.de</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
