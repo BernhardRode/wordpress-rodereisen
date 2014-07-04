@@ -17,17 +17,17 @@
         </ul>
         <ul class="list-unstyled visible-xs">
           <li>
-            <a href="tel:0049706294990" class="btn btn-success">
+            <a href="tel:0049706294990" class="btn btn-success btn-block">
               <i class="fa fa-phone"></i> Beilstein
             </a>
           </li>
           <li>
-            <a href="tel:0049714481550" class="btn btn-success">
+            <a href="tel:0049714481550" class="btn btn-success btn-block">
               <i class="fa fa-phone"></i> Steinheim
             </a>
           </li>
           <li>
-            <a href="mailto:info@rodereisen.de" class="btn btn-success">
+            <a href="mailto:info@rodereisen.de" class="btn btn-success btn-block">
               <i class="fa fa-envelope"></i> info@rodereisen.de
             </a>
           </li>
@@ -39,14 +39,14 @@
         <i class="fa fa-clock-o fa-5x gradient"></i>
         <ul class="list-unstyled" itemscope itemtype="http://schema.org/LocalBusiness">
           <li>
-            <strong>Mo bis Fr </strong><br>9.00 Uhr - 18.00 Uhr
+            <h3><strong>Mo bis Fr </strong><br>9.00 Uhr - 18.00 Uhr</h3>
             <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00">
           </li>
           <li>
-            <strong>Sa: </strong>9.00 Uhr - 13.00 Uhr
+            <h3><strong>Sa: </strong>9.00 Uhr - 13.00 Uhr</h3>
             <meta itemprop="openingHours" content="Sa 09:00-13:00">
           </li>
-          <li><strong>So: </strong>geschlossen</li>
+          <li><h3><strong>So: </strong>geschlossen</h3></li>
         </ul>
       </div>
     </div>
