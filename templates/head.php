@@ -35,6 +35,7 @@
 ?>
 
   <title><?php echo $title;?></title>
+  <link rel="canonical" href="http://www.rodereisen.de" />
   <!-- BEGIN OF META TAGS -->
   <meta name="description" content="<?php echo $description; ?>" />
   <!-- Google+ Meta Tags -->
