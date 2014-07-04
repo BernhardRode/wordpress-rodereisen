@@ -6,13 +6,13 @@
         <ul class="list-unstyled hidden-xs">
           <li>
             <strong>Beilstein</strong><br>
-            <a href="tel:0049706294990" class="btn btn-success">+49 (0)7062 94990</a>
+            <a href="tel:0049706294990">+49 (0)7062 94990</a>
           </li>
           <li>
-            <strong>Steinheim</strong><br><a href="tel:0049714481550" class="btn btn-success">+49 (0)7144 81550</a>
+            <strong>Steinheim</strong><br><a href="tel:0049714481550">+49 (0)7144 81550</a>
           </li>
           <li>
-            <strong>Mail</strong><br><a href="mailto:info@rodereisen.de" class="btn btn-success">info@rodereisen.de</a>
+            <strong>Mail</strong><br><a href="mailto:info@rodereisen.de">info@rodereisen.de</a>
           </li>
         </ul>
         <ul class="list-unstyled visible-xs">
