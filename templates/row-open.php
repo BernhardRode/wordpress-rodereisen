@@ -3,30 +3,33 @@
     <div class="col col-sm-4 text-center">
       <div class="box">
         <i class="fa fa-info fa-5x gradient"></i>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled hidden-xs">
           <li>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Beilstein</label>
-              <div class="col-sm-10">
-                <a href="tel:0049706294990" class="btn btn-success">+49 (0)7062 94990</a>
-              </div>
-            </div>
+            <strong>Beilstein</strong><br>
+            <a href="tel:0049706294990" class="btn btn-success">+49 (0)7062 94990</a>
           </li>
           <li>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Steinheim</label>
-              <div class="col-sm-10">
-                <a href="tel:0049714481550" class="btn btn-success">+49 (0)7144 81550</a>
-              </div>
-            </div>
+            <strong>Steinheim</strong><br><a href="tel:0049714481550" class="btn btn-success">+49 (0)7144 81550</a>
           </li>
           <li>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Mail</label>
-              <div class="col-sm-10">
-                <a href="mailto:info@rodereisen.de" class="btn btn-success">info@rodereisen.de</a>
-              </div>
-            </div>
+            <strong>Mail</strong><br><a href="mailto:info@rodereisen.de" class="btn btn-success">info@rodereisen.de</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled visible-xs">
+          <li>
+            <a href="tel:0049706294990" class="btn btn-success">
+              <i class="fa fa-phone"></i> Beilstein
+            </a>
+          </li>
+          <li>
+            <a href="tel:0049714481550" class="btn btn-success">
+              <i class="fa fa-phone"></i> Steinheim
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@rodereisen.de" class="btn btn-success">
+              <i class="fa fa-envelope"></i> info@rodereisen.de
+            </a>
           </li>
         </ul>
       </div>
