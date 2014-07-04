@@ -4,9 +4,9 @@
       <div class="box">
         <i class="fa fa-info fa-5x gradient"></i>
         <ul class="list-unstyled">
-          <li><strong>Beilstein</strong><br><a href="tel:0049706294990">+49 (0)7062 94990</a></li>
-          <li><strong>Steinheim</strong><br><a href="tel:0049714481550">+49 (0)7144 81550</a></li>
-          <li><strong>Mail</strong><br><a href="mailto:info@rodereisen.de">info@rodereisen.de</a></li>
+          <li><strong>Beilstein</strong><br><a href="tel:0049706294990" class="btn btn-success">+49 (0)7062 94990</a></li>
+          <li><strong>Steinheim</strong><br><a href="tel:0049714481550" class="btn btn-success">+49 (0)7144 81550</a></li>
+          <li><strong>Mail</strong><br><a href="mailto:info@rodereisen.de" class="btn btn-success">info@rodereisen.de</a></li>
         </ul>
       </div>
     </div>
