@@ -39,14 +39,20 @@
         <i class="fa fa-clock-o fa-5x gradient"></i>
         <ul class="list-unstyled" itemscope itemtype="http://schema.org/LocalBusiness">
           <li>
-            <h3><strong>Mo bis Fr </strong><br>9.00 Uhr - 18.00 Uhr</h3>
+            <h3 class="visible-xs"><strong>Mo bis Fr </strong><br>9.00 Uhr - 18.00 Uhr</h3>
+            <span class="hidden-xs"><strong>Mo bis Fr </strong><br>9.00 Uhr - 18.00 Uhr</span>
             <meta itemprop="openingHours" content="Mo-Fr 09:00-18:00">
           </li>
           <li>
-            <h3><strong>Sa: </strong>9.00 Uhr - 13.00 Uhr</h3>
+            <h3 class="visible-xs"><strong>Sa: </strong>9.00 Uhr - 13.00 Uhr</h3>
+            <span class="hidden-xs"><strong>Sa: </strong>9.00 Uhr - 13.00 Uhr</span>
             <meta itemprop="openingHours" content="Sa 09:00-13:00">
           </li>
-          <li><h3><strong>So: </strong>geschlossen</h3></li>
+          <li>
+            <h3 class="visible-xs"><strong>So: </strong>geschlossen</h3>
+            <span class="hidden-xs"><strong>So: </strong>geschlossen</span>
+          </li>
+
         </ul>
       </div>
     </div>
