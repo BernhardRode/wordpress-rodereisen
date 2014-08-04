@@ -88,12 +88,15 @@ function roots_gallery($attr) {
     switch($link) {
       case 'file':
         $image = wp_get_attachment_link($id, $size, false, false);
+        //$image_full = wp_get_attachment_link($id, 'large', false, false);
         break;
       case 'none':
         $image = wp_get_attachment_image($id, $size, false, array('class' => 'thumbnail img-thumbnail'));
+        //$image_full = wp_get_attachment_image($id, 'large', false, array('class' => 'thumbnail img-thumbnail'));
         break;
       default:
         $image = wp_get_attachment_link($id, $size, true, false);
+        //$image_full = wp_get_attachment_link($id, 'large', true, false);
         break;
     }
     $output .= ($i % $columns == 0) ? '<div class="row gallery-row">': '';
@@ -124,7 +127,7 @@ if (current_theme_supports('bootstrap-gallery')) {
  */
 function roots_attachment_link_class($html) {
   $postid = get_the_ID();
-  $html = str_replace('<a', '<a class="thumbnail img-thumbnail"', $html);
+  $html = str_replace('<a', '<a class="thumbnail img-thumbnail img-circle"', $html);
   return $html;
 }
 add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 1);
