@@ -91,7 +91,7 @@ function roots_gallery($attr) {
         break;
       case 'none':
         $image_full = wp_get_attachment_image_src($id, 'large');
-        $image = wp_get_attachment_image($id, $size, false, array('class' => 'img-thumbnail img-circle','data-fullscreen' => $image_full));
+        $image = wp_get_attachment_image($id, $size, false, array('class' => 'img-thumbnail img-circle','data-fullscreen' => $image_full[0]));
         break;
       default:
         $image = wp_get_attachment_link($id, $size, true, false);
