@@ -284,6 +284,9 @@ function remove_width_attribute( $html ) {
    return $html;
 }
 
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
+
 // add_shortcode('wp_caption', 'fixed_img_caption_shortcode');
 // add_shortcode('caption', 'fixed_img_caption_shortcode');
 // function fixed_img_caption_shortcode($attr, $content = null) {

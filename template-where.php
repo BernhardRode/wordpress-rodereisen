@@ -21,9 +21,11 @@ Template Name: Where Template
         <div class="row">
           <div class="col col-xs-5">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BST.jpg" class="img-thumbnail img-responsive">
+            <!--
             <a class="btn btn-warning margin-top-20" href="https://www.google.com/maps/views/view/109291867098216000411/photo/quWvYUn4XJgAAAQW4fVg5A" target="_blank">
               360° Ansicht
             </a>
+            -->
           </div>
           <div class="col col-xs-7">
             <address>
@@ -39,9 +41,11 @@ Template Name: Where Template
         <div class="row">
           <div class="col col-xs-5">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/STH.jpg" class="img-thumbnail img-responsive">
+            <!--
             <a class="btn btn-warning margin-top-20" href="https://www.google.com/maps/views/view/109291867098216000411/photo/quWvYUn4XJgAAAQW4fVg5A" target="_blank" disabled>
               360° Ansicht
             </a>
+            -->
           </div>
           <div class="col col-xs-7">
             <address>

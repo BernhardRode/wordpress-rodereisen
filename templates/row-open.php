@@ -59,11 +59,11 @@
     <div class="col col-sm-4 text-center">
       <div class="box">
         <i class="fa fa-heart-o fa-5x gradient"></i>
-        <h3>
-          Immer aktuell Informiert
-        </h3>
         <a href="https://plus.google.com/+rodereisende/posts" target="_blank" class="btn btn-lg btn-block btn-danger">
           Unsere <i class="fa fa-google-plus-square"></i> Seite
+        </a>
+        <a href="https://www.facebook.com/ReisebueroRode" target="_blank" class="btn btn-lg btn-block btn-primary">
+          Unsere <i class="fa fa-facebook-square"></i> Seite
         </a>
       </div>
     </div>

@@ -3,11 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/rodereisen.png" type="image/png" />
   <?php wp_head(); ?>
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>" />
+
+
+  <meta name="keywords" content="Kreuzfahrt, Reise, Urlaub, Familie, Hotel, Flug, Golf, Ruhe, Sehnsucht, Traumziele">
+
+  <meta name="author" content="Reisebüro Rode GmbH, BeilsteinGermany - 2015 / www.rodereisen.de">
+
+  <meta name="audience" content="All">
+  <meta name="revisit-after" content="3 days">
+
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta name="robots" content="INDEX,FOLLOW">
+
+  <meta name="theme-color" content="#4fc0fa">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Rodereisen">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style">
+  <meta name="apple-mobile-web-app-title" content="Rodereisen">
+
+  <meta name="msapplication-TileColor" content="#4fc0fa">
+  <meta name="msapplication-tap-highlight" content="no">
 
   <?php
     $title = "Reisebüro Rode GmbH | wir kümmern uns. um sie.";
@@ -31,7 +53,6 @@
       #$description = strip_tags(get_the_excerpt());
       $description = substr( get_the_excerpt(), 0, 156 );
     }
-
 ?>
 
   <title><?php echo $title;?></title>
@@ -81,6 +102,7 @@
   <meta property="business:contact_data:website" content="http://www.rodereisen.de"/>
   -->
   <!-- END OF META TAGS -->
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
