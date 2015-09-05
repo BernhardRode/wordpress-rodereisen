@@ -1,14 +1,14 @@
 {
-  "name": "roots",
-  "version": "6.5.2",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "http://roots.io",
+  "name": "wordpress-rodereisen",
+  "version": "2.0.0",
+  "author": "Bernhard Rode <br@webworker.io>",
+  "homepage": "http://webworker.io",
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/roots.git"
+    "url": "git://github.com/BernhardRode/wordpress-rodereisen.git"
   },
   "bugs": {
-    "url" : "https://github.com/roots/roots/issues"
+    "url" : "https://github.com/BernhardRode/wordpress-rodereisen/issues"
   },
   "licenses": [{
     "type": "MIT",
