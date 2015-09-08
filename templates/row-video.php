@@ -8,7 +8,7 @@
 <div class="box">
   <div class="row">
     <div class="col col-sm-12 text-center">
-      <iframe class="video-iframe" src="https://www.youtube.com/embed/o-8ReJCW3eQ;?showinfo=0" frameborder="0" allowfullscreen></iframe>
+      <iframe class="video-iframe" src="https://www.youtube.com/embed/o-8ReJCW3eQ?showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
