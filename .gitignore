@@ -2,3 +2,4 @@ node_modules
 assets/bower_components
 assets/css/main.min.css
 assets/js/scripts.min.js
+.idea
