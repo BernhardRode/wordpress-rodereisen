@@ -57,6 +57,16 @@
         </ul>
       </div>
     </div>
+    
+    <div class="row">
+      <div class="col-xs-12">
+        <span>
+          volksbank backnang 
+          iban:<span itemprop="iban">DE52 6029 1120 0660 2660 08</span>
+          bic:<span itemprop="bic">GENODES1VBK</span>
+        </span>
+      </div>
+    </div>
     <?php function auto_copyright($year = 'auto'){ ?>
        <?php if(intval($year) == 'auto'){ $year = date('Y'); } ?>
        <?php if(intval($year) == date('Y')){ echo intval($year); } ?>
