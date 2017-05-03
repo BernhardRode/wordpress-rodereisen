@@ -21,7 +21,7 @@ Template Name: Home Template
 
 <?php get_template_part('templates/row-open'); ?>
 
-<?php get_template_part('templates/row-video'); ?>
+<?php // get_template_part('templates/row-video'); ?>
 
 <div class="hidden-xs">
   <?php get_template_part('templates/row-booking'); ?>
